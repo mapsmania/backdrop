@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Backdrop</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+      integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+      crossorigin=""
+    />
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="column-left">
+       
+        <div id="map" ></div>
+        <div id="buttonsdiv"></div>
+        <div id="my-div">Back-Drop</div>
+        <canvas id="canvas"></canvas>
+         
+      </div>
+
+      <div class="column-right">
+          <div id="about">
+        <a
+          href="https://googlemapsmania.blogspot.com/2024/04/backdrop-ultimate-challenge.html"
+          >about</a
+        >
+      </div>
+        <div id="station">Back-Drop</div>
+        <div id="ghostinfo">
+          <br><br>
+                  
+
+          Identify the locations of famous works of art by dropping a marker on
+          the correct location on the map.
+
+          <br /><br /><b>If you want a clue then mouseover the image to reveal the name of the painting</b>. <p>
+          
+          There are
+          five rounds in each game.</p> <br /><br />
+       
+            <br />
+            <br />
+  
+        </div>
+        <div id="playbutton">
+          <button class="button round-6" onclick="toPlay()">Play</button>
+        </div>
+
+        <div id="playagain"></div>
+      </div>
+    </div>
+
+    <script
+      src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+      integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+      crossorigin=""
+    ></script>
+    <script src="script.js"></script>
+    <script src="fireworks.js"></script>
+  </body>
+</html>
