@@ -773,7 +773,7 @@ const stationInfo = {
   [durham]:
     '<img src="images/539216ldsdl.jpg" class="center" title="Durham Cathedral" width="400"> (1846) by George Arthur Fripp <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:9261\'>Yale Center for British Art</a>.',
   [august]:
-    '<img src="images/Thomas_Fearnley_-_The_Augustusbr%C3%BCcke_in_Dresden_-_Augustusbr%C3%BCcke_i_Dresden_-_Nasjonalmuseet_-_NG.M.02218.jpg" class="center" title="The Augustusbrücke in Dresden" width="400"> (1829) by Thomas Fearnley <br><br> From the <a href=\'https://www.nasjonalmuseet.no/en/collection/object/NG.M.02218\'>National Museum Norway</a>.',
+    '<img src="images/Thomas.jpg" class="center" title="The Augustusbrücke in Dresden" width="400"> (1829) by Thomas Fearnley <br><br> From the <a href=\'https://www.nasjonalmuseet.no/en/collection/object/NG.M.02218\'>National Museum Norway</a>.',
   [memlook]:
     '<img src="images/Memlooks.jpg" class="center" title="Tombs of the Memlooks, Cairo" width="400"> (1838) by David Roberts <br><br> From the <a href=\'https://loc.gov/pictures/resource/cph.3g04057/\'>Library of Congress</a>.',
   [oxford]:
