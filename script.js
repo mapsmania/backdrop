@@ -629,7 +629,7 @@ const stationInfo = {
   [padua]:
     '<img src="images/portello.jpg" onclick="this.requestFullscreen()" class="center" title="The Porta Portello, Padua" width="400"> (c1741) by Canaletto. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46152.html\'>National Gallery of Art</a>.',
   [munich]:
-    '<img src="images/nymphenburg_palace%2C_munich_1961.9.63.jpg" onclick="this.requestFullscreen()" class="center" title="Nymphenburg Palace, Munich" width="400"> (c1761) by Bernardo Bellotto and Workshop. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46162.html\'>National Gallery of Art</a>.',
+    '<img src="images/nymphenburg.jpg" onclick="this.requestFullscreen()" class="center" title="Nymphenburg Palace, Munich" width="400"> (c1761) by Bernardo Bellotto and Workshop. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46162.html\'>National Gallery of Art</a>.',
   [forum]:
     '<img src="images/forum.jpg" onclick="this.requestFullscreen()" class="center" title="The Forum at Pompeii" width="400"> (1819) by Achille-Etna Michallon. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.221599.html\'>National Gallery of Art</a>.',
   [teatro]:
