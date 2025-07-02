@@ -845,7 +845,7 @@ const stationInfo = {
   [delft]:
     '<img src="images/980px-Jan_van_der_Heyden_-_View_of_the_Oude_Delft_Canal%2C_Delft_-_48.218_-_Detroit_Institute_of_Arts.jpg" class="center" title="View of the Oude Delft Canal, Delft" width="400"> (1660) by Jan van der Heyden <br><br> From the <a href=\'https://dia.org/\'>Detroit Institute of Art</a>.',
   [narni]:
-    '<img src="images/Le_pont_de_Narni_-_Jean-Baptiste_Camille_Corot_-_Mus%C3%A9e_du_Louvre_Peintures_RF_1613.jpg" class="center" title="Le pont de Narni" width="400"> (1826) by Jean-Baptiste Camille Corot <br><br> From the <a href=\'https://collections.louvre.fr/en/ark:/53355/cl010064102\'>The Louvre</a>.',
+    '<img src="images/Narnie.jpg" class="center" title="Le pont de Narni" width="400"> (1826) by Jean-Baptiste Camille Corot <br><br> From the <a href=\'https://collections.louvre.fr/en/ark:/53355/cl010064102\'>The Louvre</a>.',
   [flatford]:
     '<img src="images/haywain.jpg" class="center" title="The Hay Wain" width="400"> (1821) by John Constable <br><br> From the <a href=\'https://www.nationalgallery.org.uk/paintings/john-constable-the-hay-wain/\'>The National Gallery</a>.',
   [goyen]:
