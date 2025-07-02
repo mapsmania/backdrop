@@ -585,7 +585,7 @@ const stationInfo = {
   [molle]:
     '<img src="images/the_tiber_river_with_the_ponte_molle_at_sunset_2012.129.1.jpg" onclick="this.requestFullscreen()" class="center" title="The Tiber River with the Ponte Molle at Sunset" width="400"> (c1650) by Jan Asselijn. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.159836.html\'>National Gallery of Art</a>.',
   [jatte]:
-    '<img src="images/1926.224%20-%20A%20Sunday%20on%20La%20Grande%20Jatte%20%E2%80%94%201884.jpg" onclick="this.requestFullscreen()" class="center" title="Painting of Parisiens lounging on the banks of the Seine" width="400"> (1884) by Georges Seurat. <br><br> From the <a href=\'https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884\'>Art Institute of Chicago</a>.',
+    '<img src="images/Jatte.jpg" onclick="this.requestFullscreen()" class="center" title="Painting of Parisiens lounging on the banks of the Seine" width="400"> (1884) by Georges Seurat. <br><br> From the <a href=\'https://www.artic.edu/artworks/27992/a-sunday-on-la-grande-jatte-1884\'>Art Institute of Chicago</a>.',
   [fuji]:
     '<img src="images/Red_Fuji_southern_wind_clear_morning.jpg" onclick="this.requestFullscreen()" class="center" title="Painting of Mount Fuji" width="400"> (c1830) by Katsushika Hokusai. <br><br> From the <a href=\'https://commons.wikimedia.org/wiki/File:Red_Fuji_southern_wind_clear_morning.jpg\'>Wikimedia</a>.',
   [five]:
