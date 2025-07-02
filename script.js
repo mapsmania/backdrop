@@ -697,7 +697,7 @@ const stationInfo = {
   [karls]:
     '<img src="images/Johann_Friedrich_Wizani_001.jpg" class="center" title="Karlskirche, Wien" width="400"> (1895) by Johann Friedrich Wizani. <br><br> From the <a href=\'https://sammlung.wienmuseum.at/objekt/82848-blick-vom-wienfluss-gegen-elisabethbruecke-und-karlskirche/\'>Wien Museum</a>.',
   [persen]:
-    '<img src="images/Ferdinand_Georg_Waldm%C3%BCller_-_Schloss_Persenbeug_an_der_Donau_-_2594_-_Staatliche_Kunsthalle_Karlsruhe.jpg" class="center" title="Schloss Persenbeug an der Donau" width="400"> (1833) by Ferdinand Georg Waldmüller. <br><br> From the <a href=\'https://www.kunsthalle-karlsruhe.de/\'>Staatliche Kunsthalle Karlsruhe</a>.',
+    '<img src="images/Ferdinand.jpg" class="center" title="Schloss Persenbeug an der Donau" width="400"> (1833) by Ferdinand Georg Waldmüller. <br><br> From the <a href=\'https://www.kunsthalle-karlsruhe.de/\'>Staatliche Kunsthalle Karlsruhe</a>.',
   [wells]:
     '<img src="images/SAAM-1962.13.42_1.jpg" class="center" title="Wells Cathedral, England" width="400"> (1905) by Cass Gilbert. <br><br> From the <a href=\'https://www.si.edu/object/wells-cathedral-england:saam_1962.13.42\'>Smithsonian</a>.',
   [bright]:
