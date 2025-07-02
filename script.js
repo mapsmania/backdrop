@@ -627,7 +627,7 @@ const stationInfo = {
   [parth]:
     '<img src="images/ruins_of_the_parthenon_2014.79.20.jpg" onclick="this.requestFullscreen()" class="center" title="Ruins of the Parthenon" width="400"> (1880) by Sanford Robinson Gifford. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.121547.html\'>National Gallery of Art</a>.',
   [padua]:
-    '<img src="images/the_porta_portello%2C_padua_1961.9.53.jpg" onclick="this.requestFullscreen()" class="center" title="The Porta Portello, Padua" width="400"> (c1741) by Canaletto. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46152.html\'>National Gallery of Art</a>.',
+    '<img src="images/portello.jpg" onclick="this.requestFullscreen()" class="center" title="The Porta Portello, Padua" width="400"> (c1741) by Canaletto. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46152.html\'>National Gallery of Art</a>.',
   [munich]:
     '<img src="images/nymphenburg_palace%2C_munich_1961.9.63.jpg" onclick="this.requestFullscreen()" class="center" title="Nymphenburg Palace, Munich" width="400"> (c1761) by Bernardo Bellotto and Workshop. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46162.html\'>National Gallery of Art</a>.',
   [forum]:
