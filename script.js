@@ -569,7 +569,7 @@ const stationInfo = {
   [museum]:
     '<img src="images/c2819e28-3aa1-45f9-8b16-63fd41f7c39c_3000.jpg" onclick="this.requestFullscreen()" class="center" title="View of the Arch of Constantine with the Colosseum" width="400"> (1742–1745) by Canaletto. <br><br> From the <a href=\'https://www.getty.edu/art/collection/object/103RAX\'>Getty\'s Collection Online</a>.',
   [york]:
-    '<img src="images/512px-Claude_Monet_-_Houses_of_Parliament%2C_London.jpg" onclick="this.requestFullscreen()" class="center" title="Houses of Parliament, London" width="400"> (1900-1901) by Claude Monet. <br><br> From the <a href=\'https://www.artic.edu/artworks/16584/houses-of-parliament-london\'>Art Institute of Chicago</a>.',
+    '<img src="images/Parliament.jpg" onclick="this.requestFullscreen()" class="center" title="Houses of Parliament, London" width="400"> (1900-1901) by Claude Monet. <br><br> From the <a href=\'https://www.artic.edu/artworks/16584/houses-of-parliament-london\'>Art Institute of Chicago</a>.',
   [brompton]:
     '<img src="images/salisbury_cathedral_from_lower_marsh_close_1937.1.108.jpg" onclick="this.requestFullscreen()" class="center" title="Salisbury Cathedral from Lower Marsh Close" width="400"> (1820) by John Constable. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.115.html\'>National Gallery of Art</a>.',
   [william]:
