@@ -621,7 +621,7 @@ const stationInfo = {
   [ely]:
     '<img src="images/ycba_f5771714-0f77-4200-b0e9-fee60ccdc763.jpg" onclick="this.requestFullscreen()" class="center" title="View of Ely Cathedral" width="400"> (c1796) by Joseph Mallord William Turner. <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:1880\'>Yale Center for British Art</a>.',
   [italiens]:
-    '<img src="images/boulevard_des_italiens%2C_morning%2C_sunlight_1963.10.198.jpg" onclick="this.requestFullscreen()" class="center" title="Boulevard des Italiens, Morning, Sunlight" width="400"> (1897) by Camille Pissarro. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46673.html\'>National Gallery of Art</a>.',
+    '<img src="images/sunlight.jpg" onclick="this.requestFullscreen()" class="center" title="Boulevard des Italiens, Morning, Sunlight" width="400"> (1897) by Camille Pissarro. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.46673.html\'>National Gallery of Art</a>.',
   [etretat]:
     '<img src="images/washerwomen_on_the_beach_of_etretat_1970.17.17.jpg" onclick="this.requestFullscreen()" class="center" title="Washerwomen on the Beach of Etretat" width="400"> (1894) by Eugène Boudin. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.52161.html\'>National Gallery of Art</a>.',
   [parth]:
