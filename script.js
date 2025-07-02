@@ -677,7 +677,7 @@ const stationInfo = {
   [ruins]:
     '<img src="images/1940.965_v01_o4.jpg" class="center" title="Ruins of the Château de Pierrefonds" width="400"> (c1832) by Jean-Baptiste-Camille Corot. <br><br> From the <a href=\'https://www.cincinnatiartmuseum.org/art/explore-the-collection?id=11296492\'>Cincinnati Art Museum</a>.',
   [ranger]:
-    '<img src="images/1925.720%20-%20Brooklyn%20Bridge.jpg" class="center" title="Brooklyn Bridge" width="400"> (1899) by Henry Ward Ranger. <br><br> From the <a href=\'https://www.artic.edu/artworks/16545/brooklyn-bridge\'>Art Institute Chicago</a>.',
+    '<img src="images/BrooklynBridge.jpg" class="center" title="Brooklyn Bridge" width="400"> (1899) by Henry Ward Ranger. <br><br> From the <a href=\'https://www.artic.edu/artworks/16545/brooklyn-bridge\'>Art Institute Chicago</a>.',
   [santa]:
     '<img src="images/DP837464.jpg" class="center" title="Ponte Santa Trinità, Florence" width="400"> (pre 1832) by James Duffield Harding. <br><br> From the <a href=\'https://www.metmuseum.org/art/collection/search/406118\'>Met Museum</a>.',
   [old]:
