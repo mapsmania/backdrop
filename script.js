@@ -691,7 +691,7 @@ const stationInfo = {
   [saint]:
     '<img src="Salvi.jpg" class="center" title="Saint Salvi Church, Albi" width="400"> (1830-40) by Pierre Achille Poirot. <br><br> From the <a href=\'https://www.artic.edu/artworks/110752/saint-salvi-church-albi\'>Art Institute Chicago</a>.',
   [notre]:
-    '<img src="images/1922.446%20-%20Notre%20Dame%20de%20Paris.jpg" class="center" title="Notre Dame de Paris" width="400"> (1890-95) by Jean François Raffaëlli. <br><br> From the <a href=\'https://www.artic.edu/artworks/81568/notre-dame-de-paris\'>Art Institute Chicago</a>.',
+    '<img src="images/Notre.jpg" class="center" title="Notre Dame de Paris" width="400"> (1890-95) by Jean François Raffaëlli. <br><br> From the <a href=\'https://www.artic.edu/artworks/81568/notre-dame-de-paris\'>Art Institute Chicago</a>.',
   [manhattan]:
     '<img src="images/Manhattan-bridge-loop-edward-hopper-1928.jpg" class="center" title="Manhattan Bridge Loop" width="400"> (1928) by Edward Hopper. <br><br> From the <a href=\'https://addison.andover.edu/search-the-collection/?embark_query=/objects-1/info/1594?sort=0&objectName=Manhattan%20Bridge%20Loop\'>Addison Gallery of American Art</a>.',
   [karls]:
