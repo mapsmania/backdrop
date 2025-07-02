@@ -651,7 +651,7 @@ const stationInfo = {
   [rouen]:
     '<img src="images/DT1863.jpg" onclick="this.requestFullscreen()" class="center" title="Morning, An Overcast Day, Rouen" width="400"> (1896) by Camille Pissarro. <br><br> From the <a href=\'https://www.metmuseum.org/art/collection/search/437308\'>Met Museum</a>.',
   [pirna]:
-    '<img src="images/DT4602%20(1).jpg" onclick="this.requestFullscreen()" class="center" title="Pirna: The Obertor from the South" width="400"> (c1750) by Bernardo Bellotto. <br><br> From the <a href=\'https://www.metmuseum.org/art/collection/search/435646\'>Met Museum</a>.',
+    '<img src="images/DT4602.jpg" onclick="this.requestFullscreen()" class="center" title="Pirna: The Obertor from the South" width="400"> (c1750) by Bernardo Bellotto. <br><br> From the <a href=\'https://www.metmuseum.org/art/collection/search/435646\'>Met Museum</a>.',
   [sitka]:
     '<img src="images/SAAM-1985.66.326798_1_screen.jpg" onclick="this.requestFullscreen()" class="center" title="Rear View of Greek Church, Sitka" width="400"> (1888) by Theodore J. Richardson. <br><br> From the <a href=\'https://americanart.si.edu/artwork/rear-view-greek-church-sitka-1888-20899\'>Smithsonian</a>.',
   [coto]:
