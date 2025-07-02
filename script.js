@@ -723,7 +723,7 @@ const stationInfo = {
   [princes]:
     '<img src="images/503329ldsdl.jpg" class="center" title="Princes Street with the Commencement of the Building of the Royal Institution" width="400"> (1825) by Alexander Nasmyth <br><br> From the <a href=\'https://www.nationalgalleries.org/art-and-artists/17469\'>National Galleries Scotland</a>.',
   [trakai]:
-    '<img src="images/J%C3%B3zef_Marszewski_-_Ruins_of_the_Trakai_Island_Castle_at_sunset_-_MP_2685_-_National_Museum_in_Warsaw.jpg" class="center" title="Ruins of the Trakai Island Castle at sunset" width="400"> (1866) by Józef Marszewski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/catalog/445643\'>National Museum in Warsaw</a>.',
+    '<img src="images/Jozef.jpg" class="center" title="Ruins of the Trakai Island Castle at sunset" width="400"> (1866) by Józef Marszewski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/catalog/445643\'>National Museum in Warsaw</a>.',
   [palace]:
     '<img src="images/Marcin_Zaleski_-_View_of_the_%C5%81azienki_Palace_in_summer_-_MP_237_MNW_-_National_Museum_in_Warsaw.jpg" class="center" title="View of the Łazienki Palace in summer" width="400"> (1837) by Marcin Zaleski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/home\'>National Museum in Warsaw</a>.',
   [alma]:
