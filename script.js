@@ -737,7 +737,7 @@ const stationInfo = {
   [quila]:
     '<img src="images/506362ldsdl.jpg" class="center" title="Inside the Main Entrance of the Purana Qila, Delhi" width="400"> (1823) by Robert Smith <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:306\'>Yale Center for British Art</a>.',
   [concorde]:
-    '<img src="images/Concorde_tempel_binnen_muren_van_oude_Agrigentum_Temple_de_la_Concorde_dans_l\'enceinte_de_l\'ancien_Agrigentum_(titel_op_object)_Voyage_en_Italie%2C_en_Sicile_et_%C3%A0_Malte_-_1778_(serietitel)%2C_RP-T-00-494-39.jpg" class="center" title="Concorde temple within walls of ancient Agrigentum" width="400"> (1778) by Louis Ducros <br><br> From the <a href=\'https://www.rijksmuseum.nl/nl/collectie/RP-T-00-494-39\'>Rijksmuseum</a>.',
+    '<img src="images/Concorde.jpg" class="center" title="Concorde temple within walls of ancient Agrigentum" width="400"> (1778) by Louis Ducros <br><br> From the <a href=\'https://www.rijksmuseum.nl/nl/collectie/RP-T-00-494-39\'>Rijksmuseum</a>.',
   [chase]:
     '<img src="images/A_Landscape_with_Curragh_Chase%2C_County_Limerick_P7338.jpg" class="center" title="A Landscape with Curragh Chase, County Limerick" width="400"> (1834) by Jeremiah Hodges Mulcahy <br><br> From the <a href=\'https://www.nationalgallery.ie/\'>National Gallery of Ireland</a>.',
   [slottet]:
