@@ -851,7 +851,7 @@ const stationInfo = {
   [goyen]:
     '<img src="images/Goyen_1643_Paisaje_invernal_con_figuras_en_el_hielo.jpg" class="center" title="Winter Landscape With Figures On Ice" width="400"> (1643) by Jan van Goyen <br><br> From the <a href=\'https://www.museothyssen.org/en/collection/artists/goyen-jan-josephsz-van/winter-landscape-figures-ice\'>Thyssen-Bornemisza National Museum</a>.',
   [monceau]:
-    '<img src="images/1024px-Claude_Monet_-_Landscape%2C_The_Parc_Monceau.jpg" class="center" title="Landscape, The Parc Monceau" width="400"> (1876) by Claude Monet <br><br> From the <a href=\'https://www.metmuseum.org/art/collection/search/110001554\'>The Met</a>.',
+    '<img src="images/Monceau.jpg" class="center" title="Landscape, The Parc Monceau" width="400"> (1876) by Claude Monet <br><br> From the <a href=\'https://www.metmuseum.org/art/collection/search/110001554\'>The Met</a>.',
   [granite]:
     '<img src="images/1024px-1831Hummel_Granitschale_im_Lustgarten_anagoria.jpeg" class="center" title="The Granite Dish in the Berlin Lustgarten" width="400"> (1831) by Johann Erdmann Hummel <br><br> From the <a href=\'https://www.smb.museum/home/\'>Old National Gallery, Berlin</a>.',
   [entry]:
