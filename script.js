@@ -747,7 +747,7 @@ const stationInfo = {
   [lilles]:
     '<img src="images/ycba_2d1b6023-0768-4ce1-9a5b-4eb8b668036e.jpg" class="center" title="Lilleshall, Shropshire: View of the North Entrance and of the West Front" width="400"> (1826) by Sir Jeffry Wyatville <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:6270\'>Yale Center for British Art</a>.',
   [scharf]:
-    '<img src="images/528537ldsdl%20(1).jpg" class="center" title="Burg Scharfenberg at Night" width="400"> (1827) by Ernst Ferdinand Oehme <br><br> From the <a href=\'https://recherche.smb.museum/detail/961104/burg-scharfenberg-bei-nacht?language=de&question=Burg+Scharfenberg+at+Night&limit=15&sort=relevance&controls=none&collectionKey=NG*&collectionKey=NGAlteNationalgalerie&objIdx=0\'>State Museums in Berlin</a>.',
+    '<img src="images/528537.jpg" class="center" title="Burg Scharfenberg at Night" width="400"> (1827) by Ernst Ferdinand Oehme <br><br> From the <a href=\'https://recherche.smb.museum/detail/961104/burg-scharfenberg-bei-nacht?language=de&question=Burg+Scharfenberg+at+Night&limit=15&sort=relevance&controls=none&collectionKey=NG*&collectionKey=NGAlteNationalgalerie&objIdx=0\'>State Museums in Berlin</a>.',
   [marys]:
     '<img src="images/Krakow.jpg" class="center" title="St Mary\'s Church in Krakow" width="400"> (1900) by Wawrzeniecki, Marian <br><br> From the <a href=\'https://zbiory.mnk.pl/en/catalog/409216\'>National Museum in Krakow</a>.',
   [spinner]:
