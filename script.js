@@ -713,7 +713,7 @@ const stationInfo = {
   [damplatz]:
     '<img src="images/kunsthallekarlsruhe-gerrit-adriansz.-berckheyde-der-damplatz-zu-amsterdam-mit-dem-rathau-341.small_.jpg" class="center" title="Der Damplatz zu Amsterdam mit dem Rathaus und der Waage" width="400"> (1689) by Gerrit Adriansz. Berckheyde. <br><br> From the <a href=\'https://www.kunsthalle-karlsruhe.de/kunstwerke/Gerrit-Adriansz--Berckheyde/Der-Damplatz-zu-Amsterdam-mit-dem-Rathaus-und-der-Waage/0AAD71E7451E6E3EAC97F5B1C9CD326F/\'>Staatliche Kunsthalle Karlsruhe</a>.',
   [segovia]:
-    '<img src="images/Edward_Angelo_Goodall_-_Aquaduct_at_Segovia%2C_Spain_-_B1975.4.1527_-_Yale_Center_for_British_Art.jpg" class="center" title="Aquaduct at Segovia, Spain" width="400"> (19th Century) by Edward Alfred Goodall <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:10256\'>Yale Center for British Art</a>.',
+    '<img src="images/Edward.jpg" class="center" title="Aquaduct at Segovia, Spain" width="400"> (19th Century) by Edward Alfred Goodall <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:10256\'>Yale Center for British Art</a>.',
   [vyborg]:
     '<img src="images/1024px-Severin_Falkman_-_Karl_Knutson_Bonde_Leaving_Vyborg_Castle_for_the_Royal_Election_in_Stockholm_1448.jpg" class="center" title="Karl Knutson Bonde Leaving Vyborg Castle For The Royal Election In Stockholm" width="400"> (1886) by Severin Falkman <br><br> From the <a href=\'https://www.kansallisgalleria.fi/fi/object/625537\'>Finnish National Gallery</a>.',
   [cape]:
