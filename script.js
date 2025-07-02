@@ -843,7 +843,7 @@ const stationInfo = {
   [monet]:
     '<img src="images/528472ldsdl.jpg" class="center" title="St. Germain l’Auxerrois" width="400"> (1867) by Claude Monet <br><br> From the <a href=\'https://www.smb.museum/en/home/\'>Staatliche Museen zu Berlin</a>.',
   [delft]:
-    '<img src="images/980px-Jan_van_der_Heyden_-_View_of_the_Oude_Delft_Canal%2C_Delft_-_48.218_-_Detroit_Institute_of_Arts.jpg" class="center" title="View of the Oude Delft Canal, Delft" width="400"> (1660) by Jan van der Heyden <br><br> From the <a href=\'https://dia.org/\'>Detroit Institute of Art</a>.',
+    '<img src="images/Heyden.jpg" class="center" title="View of the Oude Delft Canal, Delft" width="400"> (1660) by Jan van der Heyden <br><br> From the <a href=\'https://dia.org/\'>Detroit Institute of Art</a>.',
   [narni]:
     '<img src="images/Narnie.jpg" class="center" title="Le pont de Narni" width="400"> (1826) by Jean-Baptiste Camille Corot <br><br> From the <a href=\'https://collections.louvre.fr/en/ark:/53355/cl010064102\'>The Louvre</a>.',
   [flatford]:
