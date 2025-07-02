@@ -741,7 +741,7 @@ const stationInfo = {
   [chase]:
     '<img src="images/A_Landscape_with_Curragh_Chase%2C_County_Limerick_P7338.jpg" class="center" title="A Landscape with Curragh Chase, County Limerick" width="400"> (1834) by Jeremiah Hodges Mulcahy <br><br> From the <a href=\'https://www.nationalgallery.ie/\'>National Gallery of Ireland</a>.',
   [slottet]:
-    '<img src="images/1280px-F._S%C3%B8dring_-_Slottet_B%C3%BCresheim_ved_Eifelfloden_-_KMS345_-_Statens_Museum_for_Kunst.jpg" class="center" title="Büresheim Castle on the Eifel River" width="400"> (1838) by Frederik Sødring <br><br> From the <a href=\'https://open.smk.dk/artwork/image/KMS345\'>Statens Museum for Kunst</a>.',
+    '<img src="images/Kunst.jpg" class="center" title="Büresheim Castle on the Eifel River" width="400"> (1838) by Frederik Sødring <br><br> From the <a href=\'https://open.smk.dk/artwork/image/KMS345\'>Statens Museum for Kunst</a>.',
   [chaff]:
     '<img src="images/1851-christian_georg_schutz_elder-view_aschaffenburg-1786.png" class="center" title="View of Aschaffenburg" width="400"> (1786) by Christian Georg Schütz the elder <br><br> From the <a href=\'https://sammlung.staedelmuseum.de/en/work/view-of-aschaffenburg\'>Städel Museum</a>.',
   [lilles]:
