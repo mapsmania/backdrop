@@ -859,7 +859,7 @@ const stationInfo = {
   [crownprince]:
     '<img src="images/1839_Bruecke_Parade_vor_dem_Koeniglichen_Palais_anagoria.JPG" class="center" title="Parade Before the Crown Prince\'s Palace" width="400"> (1839) by Wilhelm Brücke  <br><br> From the <a href=\'https://www.stadtmuseum.de/museum/maerkisches-museum\'>Märkisches Museum</a>.',
   [change]:
-    '<img src="images/1280px-Giuseppe_Canella_-_Le_march%C3%A9_aux_fleurs%2C_la_Tour_de_l\'Horloge%2C_le_Pont_au_Change_et_le_Pont-Neuf_-_P1910_-_Mus%C3%A9e_Carnavalet.jpg" class="center" title="The flower market, the Clock Tower, the Pont au Change and the Pont-Neuf" width="400"> (1832) by Giuseppe Canella  <br><br> From the <a href=\'https://www.parismuseescollections.paris.fr/en/musee-carnavalet/oeuvres/le-marche-aux-fleurs-la-tour-de-l-horloge-le-pont-au-change-et-le-pont-neuf\'>Carnival Museum</a>.',
+    '<img src="images/Carnavalet.jpg" class="center" title="The flower market, the Clock Tower, the Pont au Change and the Pont-Neuf" width="400"> (1832) by Giuseppe Canella  <br><br> From the <a href=\'https://www.parismuseescollections.paris.fr/en/musee-carnavalet/oeuvres/le-marche-aux-fleurs-la-tour-de-l-horloge-le-pont-au-change-et-le-pont-neuf\'>Carnival Museum</a>.',
   [starrynight]:
     '<img src="images/Vincent_van_Gogh_-_Starry_Night_-_Google_Art_Project.jpg" class="center" title="Starry Night" width="400"> (1888) by Vincent van Gogh <br><br> From the <a href=\'https://www.musee-orsay.fr/en\'>Musée d\'Orsay</a>.',
 };
