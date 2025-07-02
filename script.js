@@ -643,7 +643,7 @@ const stationInfo = {
   [egmond]:
     '<img src="images/1947.475%20-%20Landscape%20with%20the%20Ruins%20of%20the%20Castle%20of%20Egmond.jpg" onclick="this.requestFullscreen()" class="center" title="Landscape with the Ruins of the Castle of Egmond" width="400"> (1650-55) by Jacob van Ruisdael. <br><br> From the <a href=\'https://www.artic.edu/artworks/60755/landscape-with-the-ruins-of-the-castle-of-egmond\'>Art Institute Chicago</a>.',
   [erupt]:
-    '<img src="images/1978.426%20-%20The%20Eruption%20of%20Vesuvius.jpg" onclick="this.requestFullscreen()" class="center" title="The Eruption of Vesuvius" width="400"> (1771) by Pierre-Jacques Volaire. <br><br> From the <a href=\'https://www.artic.edu/artworks/57996/the-eruption-of-vesuvius\'>Art Institute Chicago</a>.',
+    '<img src="images/Vesuvius.jpg" onclick="this.requestFullscreen()" class="center" title="The Eruption of Vesuvius" width="400"> (1771) by Pierre-Jacques Volaire. <br><br> From the <a href=\'https://www.artic.edu/artworks/57996/the-eruption-of-vesuvius\'>Art Institute Chicago</a>.',
   [hart]:
     '<img src="images/1958.425_web.jpg" onclick="this.requestFullscreen()" class="center" title="Hunting near Hartenfels Castle" width="400"> (1540) by Lucas Cranach. <br><br> From the <a href=\'https://www.clevelandart.org/art/1958.425\'>Cleveland Museum of Art</a>.',
   [tour]:
