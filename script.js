@@ -689,7 +689,7 @@ const stationInfo = {
   [eichhorn]:
     '<img src="images/eichhorn_castle_at_evening_2000.73.1.jpg" class="center" title="Eichhorn Castle at Evening" width="400"> (c1838) by Josef Höger. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.111633.html\'>National Gallery of Art</a>.',
   [saint]:
-    '<img src="images/1931.718%20-%20Saint%20Salvi%20Church%2C%20Albi.jpg" class="center" title="Saint Salvi Church, Albi" width="400"> (1830-40) by Pierre Achille Poirot. <br><br> From the <a href=\'https://www.artic.edu/artworks/110752/saint-salvi-church-albi\'>Art Institute Chicago</a>.',
+    '<img src="Salvi.jpg" class="center" title="Saint Salvi Church, Albi" width="400"> (1830-40) by Pierre Achille Poirot. <br><br> From the <a href=\'https://www.artic.edu/artworks/110752/saint-salvi-church-albi\'>Art Institute Chicago</a>.',
   [notre]:
     '<img src="images/1922.446%20-%20Notre%20Dame%20de%20Paris.jpg" class="center" title="Notre Dame de Paris" width="400"> (1890-95) by Jean François Raffaëlli. <br><br> From the <a href=\'https://www.artic.edu/artworks/81568/notre-dame-de-paris\'>Art Institute Chicago</a>.',
   [manhattan]:
