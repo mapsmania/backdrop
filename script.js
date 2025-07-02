@@ -775,7 +775,7 @@ const stationInfo = {
   [august]:
     '<img src="images/Thomas_Fearnley_-_The_Augustusbr%C3%BCcke_in_Dresden_-_Augustusbr%C3%BCcke_i_Dresden_-_Nasjonalmuseet_-_NG.M.02218.jpg" class="center" title="The Augustusbrücke in Dresden" width="400"> (1829) by Thomas Fearnley <br><br> From the <a href=\'https://www.nasjonalmuseet.no/en/collection/object/NG.M.02218\'>National Museum Norway</a>.',
   [memlook]:
-    '<img src="images/1024px-Tombs_of_the_Memlooks%2C_Cairo-David_Roberts.jpg" class="center" title="Tombs of the Memlooks, Cairo" width="400"> (1838) by David Roberts <br><br> From the <a href=\'https://loc.gov/pictures/resource/cph.3g04057/\'>Library of Congress</a>.',
+    '<img src="images/Memlooks.jpg" class="center" title="Tombs of the Memlooks, Cairo" width="400"> (1838) by David Roberts <br><br> From the <a href=\'https://loc.gov/pictures/resource/cph.3g04057/\'>Library of Congress</a>.',
   [oxford]:
     '<img src="images/oxford.jpg" class="center" title="High Street, Oxford (Queen\'s College)" width="400"> (1798) by Thomas Malton the Younger <br><br> From the <a href=\'https://collections.britishart.yale.edu/catalog/tms:1535\'>Yale Center for British Art</a>.',
   [lincoln]:
