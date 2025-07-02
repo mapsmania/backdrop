@@ -739,7 +739,7 @@ const stationInfo = {
   [concorde]:
     '<img src="images/Concorde.jpg" class="center" title="Concorde temple within walls of ancient Agrigentum" width="400"> (1778) by Louis Ducros <br><br> From the <a href=\'https://www.rijksmuseum.nl/nl/collectie/RP-T-00-494-39\'>Rijksmuseum</a>.',
   [chase]:
-    '<img src="images/A_Landscape_with_Curragh_Chase%2C_County_Limerick_P7338.jpg" class="center" title="A Landscape with Curragh Chase, County Limerick" width="400"> (1834) by Jeremiah Hodges Mulcahy <br><br> From the <a href=\'https://www.nationalgallery.ie/\'>National Gallery of Ireland</a>.',
+    '<img src="images/Limerick.jpg" class="center" title="A Landscape with Curragh Chase, County Limerick" width="400"> (1834) by Jeremiah Hodges Mulcahy <br><br> From the <a href=\'https://www.nationalgallery.ie/\'>National Gallery of Ireland</a>.',
   [slottet]:
     '<img src="images/Kunst.jpg" class="center" title="Büresheim Castle on the Eifel River" width="400"> (1838) by Frederik Sødring <br><br> From the <a href=\'https://open.smk.dk/artwork/image/KMS345\'>Statens Museum for Kunst</a>.',
   [chaff]:
