@@ -200,7 +200,7 @@ const LeafIcon = L.Icon.extend({
 
 const greenIcon = new LeafIcon({
   iconUrl:
-    "https://cdn.glitch.global/f4cb3da3-e38f-4c57-8538-cd16160b85b3/_265a5cce-4ba0-4c1c-a76f-a7d5f00d8ea0-removebg-preview%20(1).png?v=1705859478915",
+    "images/marker.png",
 });
 
 // Function to run the game with remaining reference points
