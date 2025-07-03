@@ -717,7 +717,7 @@ const stationInfo = {
   [vyborg]:
     '<img src="images/1024px-Severin_Falkman_-_Karl_Knutson_Bonde_Leaving_Vyborg_Castle_for_the_Royal_Election_in_Stockholm_1448.jpg" class="center" title="Karl Knutson Bonde Leaving Vyborg Castle For The Royal Election In Stockholm" width="400"> (1886) by Severin Falkman <br><br> From the <a href=\'https://www.kansallisgalleria.fi/fi/object/625537\'>Finnish National Gallery</a>.',
   [cape]:
-    '<img src="images/Robert_Gwelo_Goodman_-_City_Hall%2C_Cape_Town_1917_-_Google_Art_Project.jpg" class="center" title="City Hall, Cape Town" width="400"> (1917) by Robert Gwelo Goodman <br><br> From the <a href=\'https://www.iziko.org.za/\'>Iziko South African National Gallery</a>.',
+    '<img src="images/Robert.jpg" class="center" title="City Hall, Cape Town" width="400"> (1917) by Robert Gwelo Goodman <br><br> From the <a href=\'https://www.iziko.org.za/\'>Iziko South African National Gallery</a>.',
   [vilnius]:
     '<img src="images/530679ldsdl.jpg" class="center" title="Town Hall in Vilnius" width="400"> (1946) by Marcin Zaleski <br><br> From the <a href=\'https://www.mnw.art.pl/en/\'>National Museum in Warsaw</a>.',
   [princes]:
