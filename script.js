@@ -641,7 +641,7 @@ const stationInfo = {
   [marly]:
     '<img src="images/flood_at_port-marly_1985.64.38.jpg" onclick="this.requestFullscreen()" class="center" title="Flood at Port-Marly" width="400"> (1872) by Alfred Sisley. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.66436.html\'>National Gallery of Art</a>.',
   [egmond]:
-    '<img src="images/Egmond,jpg" onclick="this.requestFullscreen()" class="center" title="Landscape with the Ruins of the Castle of Egmond" width="400"> (1650-55) by Jacob van Ruisdael. <br><br> From the <a href=\'https://www.artic.edu/artworks/60755/landscape-with-the-ruins-of-the-castle-of-egmond\'>Art Institute Chicago</a>.',
+    '<img src="images/Egmond.jpg" onclick="this.requestFullscreen()" class="center" title="Landscape with the Ruins of the Castle of Egmond" width="400"> (1650-55) by Jacob van Ruisdael. <br><br> From the <a href=\'https://www.artic.edu/artworks/60755/landscape-with-the-ruins-of-the-castle-of-egmond\'>Art Institute Chicago</a>.',
   [erupt]:
     '<img src="images/Vesuvius.jpg" onclick="this.requestFullscreen()" class="center" title="The Eruption of Vesuvius" width="400"> (1771) by Pierre-Jacques Volaire. <br><br> From the <a href=\'https://www.artic.edu/artworks/57996/the-eruption-of-vesuvius\'>Art Institute Chicago</a>.',
   [hart]:
