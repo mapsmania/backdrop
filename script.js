@@ -577,7 +577,7 @@ const stationInfo = {
   [mark]:
     '<img src="images/niagara_2014.79.10.jpg" onclick="this.requestFullscreen()" class="center" title="Niagra" width="400"> (1857) by Frederic Edwin Church. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.166436.html\'>National Gallery of Art</a>.',
   [marys]:
-    '<img src="images/high_bridge_at_night%2C_new_york_city_2016.129.1.jpg" onclick="this.requestFullscreen()" class="center" title="High Bridge at Night, New York City" width="400"> (c1915) by Ernest Lawson. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.206651.html\'>National Gallery of Art</a>.',
+    '<img src="high_bridge_at_night.jpg" onclick="this.requestFullscreen()" class="center" title="High Bridge at Night, New York City" width="400"> (c1915) by Ernest Lawson. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.206651.html\'>National Gallery of Art</a>.',
   [kent]:
     '<img src="images/charing_cross.jpg" onclick="this.requestFullscreen()" class="center" title="Charing Cross Bridge, London" width="400"> (1890) by Camille Pissarro. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.66430.html\'>National Gallery of Art</a>.',
   [marl]:
