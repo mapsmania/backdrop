@@ -579,7 +579,7 @@ const stationInfo = {
   [marys]:
     '<img src="images/high_bridge_at_night%2C_new_york_city_2016.129.1.jpg" onclick="this.requestFullscreen()" class="center" title="High Bridge at Night, New York City" width="400"> (c1915) by Ernest Lawson. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.206651.html\'>National Gallery of Art</a>.',
   [kent]:
-    '<img src="images/charing_cross_bridge%2C_london_1985.64.32.jpg" onclick="this.requestFullscreen()" class="center" title="Charing Cross Bridge, London" width="400"> (1890) by Camille Pissarro. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.66430.html\'>National Gallery of Art</a>.',
+    '<img src="images/charing_cross.jpg" onclick="this.requestFullscreen()" class="center" title="Charing Cross Bridge, London" width="400"> (1890) by Camille Pissarro. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.66430.html\'>National Gallery of Art</a>.',
   [marl]:
     '<img src="images/the_fortress_of_konigstein_1993.8.1.jpg" onclick="this.requestFullscreen()" class="center" title="The Fortress of Königstein" width="400"> (1756-1758) by Bernardo Bellotto. <br><br> From the <a href=\'https://www.nga.gov/collection/art-object-page.80924.html\'>National Gallery of Art</a>.',
   [molle]:
