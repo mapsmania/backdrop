@@ -827,7 +827,7 @@ const stationInfo = {
   [bello]:
     '<img src="images/bellotto.jpg" class="center" title="Church of the Holy Cross in Warsaw" width="400"> (1778) by Bernardo Bellotto <br><br> From the <a href=\'https://kolekcja.zamek-krolewski.pl/en/obiekt-346-church-holy-cross\'>National Museum in Warsaw</a>.',
   [column]:
-    '<img src="images/View%20from%20the%20Castle%20Square%20towards%20Krakowskie%20Przedmie%C5%9Bcie.jpg" class="center" title="View from the Castle Square towards Krakowskie Przedmieście" width="400"> (C19th) by Filip Romanowski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/catalog/440455\'>National Museum in Warsaw</a>.',
+    '<img src="images/CastleSquare.jpg" class="center" title="View from the Castle Square towards Krakowskie Przedmieście" width="400"> (C19th) by Filip Romanowski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/catalog/440455\'>National Museum in Warsaw</a>.',
   [prou]:
     '<img src="images/513102ldsdl.jpg" class="center" title="La rue des Prouvaires et l’église Saint-Eustache" width="400"> (1828) by Giuseppe Canella <br><br> From the <a href=\'https://parismuseescollections.paris.fr/en/node/151535#infos-principales\'>Paris Musées</a>.',
   [admiral]:
