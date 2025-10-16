@@ -725,7 +725,7 @@ const stationInfo = {
   [trakai]:
     '<img src="images/Jozef.jpg" class="center" title="Ruins of the Trakai Island Castle at sunset" width="400"> (1866) by Józef Marszewski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/catalog/445643\'>National Museum in Warsaw</a>.',
   [palace]:
-    '<img src="images/Marcin_Zaleski_-_View_of_the_%C5%81azienki_Palace_in_summer_-_MP_237_MNW_-_National_Museum_in_Warsaw.jpg" class="center" title="View of the Łazienki Palace in summer" width="400"> (1837) by Marcin Zaleski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/home\'>National Museum in Warsaw</a>.',
+    '<img src="images/azienki_Palace.jpg" class="center" title="View of the Łazienki Palace in summer" width="400"> (1837) by Marcin Zaleski <br><br> From the <a href=\'https://cyfrowe.mnw.art.pl/en/home\'>National Museum in Warsaw</a>.',
   [alma]:
     '<img src="images/image_brouardel_laure_exposition_de_1_d.7633_407679.jpg" class="center" title="Exposition de 1900, le pont de l’Alma" width="400"> (1900) by Laure Brouardel <br><br> From the <a href=\'https://www.parismuseescollections.paris.fr/fr/musee-carnavalet/oeuvres/exposition-de-1900-le-pont-de-l-alma#infos-principales\'>Paris Musees</a>.',
   [spui]:
