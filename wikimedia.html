@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wikimedia GeoGuessr</title>
+  <link href="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.css" rel="stylesheet" />
+  <style>
+    * { box-sizing: border-box; }
+    body { margin: 0; font-family: Arial, sans-serif; background: #111; color: white; }
+    .app { display: flex; flex-direction: column; height: 100vh; }
+    .topbar { padding: 12px 20px; background: #1b1b1b; border-bottom: 1px solid #333; display: flex; justify-content: space-between; align-items: center; }
+    .game { display: grid; grid-template-columns: 1fr 420px; flex: 1; overflow: hidden; }
+    #map { width: 100%; height: 100%; }
+    .sidebar { border-left: 1px solid #333; background: #181818; display: flex; flex-direction: column; overflow: hidden; }
+    .image-container { padding: 12px; border-bottom: 1px solid #333; }
+    .photo { width: 100%; height: 320px; object-fit: contain; border-radius: 8px; background: #222; cursor: zoom-in; }
+    .lightbox { position: fixed; inset: 0; background: rgba(0,0,0,0.92); display: none; align-items: center; justify-content: center; z-index: 9999; padding: 20px; }
+    .lightbox.open { display: flex; }
+    .lightbox img { max-width: 95vw; max-height: 95vh; object-fit: contain; border-radius: 10px; }
+    .lightbox-close { position: absolute; top: 20px; right: 24px; font-size: 42px; color: white; cursor: pointer; font-family: Arial, sans-serif; }
+    .info { padding: 12px; border-bottom: 1px solid #333; }
+    .controls { padding: 12px; display: flex; gap: 10px; flex-wrap: wrap; }
+    button { padding: 10px 16px; border: none; border-radius: 6px; background: #2d7ff9; color: white; cursor: pointer; font-size: 14px; }
+    button:hover { background: #1f6be0; }
+    button:disabled { opacity: 0.5; cursor: not-allowed; }
+    .results { padding: 12px; overflow-y: auto; flex: 1; }
+    .score { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+    .distance { margin-bottom: 10px; }
+    .meta { color: #bbb; line-height: 1.5; }
+    .status { padding: 12px; color: #aaa; }
+    @media (max-width: 900px) {
+      .game { grid-template-columns: 1fr; }
+      .sidebar { height: 50vh; }
+    }
+  </style>
+</head>
+<body>
+
+<div class="app">
+  <div class="topbar">
+    <div><strong>Wikimedia GeoGuessr</strong></div>
+    <div>Score: <span id="totalScore">0</span></div>
+  </div>
+
+  <div class="game">
+    <div id="map"></div>
+    <div class="sidebar">
+      <div class="image-container">
+        <img id="photo" class="photo" />
+      </div>
+      <div class="info">
+        <div>Guess where this Wikimedia image was taken.</div>
+        <div class="status" id="status">Loading...</div>
+      </div>
+      <div class="controls">
+        <button id="submitBtn" disabled>Submit Guess</button>
+        <button id="nextBtn" disabled>Next Round</button>
+      </div>
+      <div class="results" id="results"></div>
+    </div>
+  </div>
+</div>
+
+<div class="lightbox" id="lightbox">
+  <div class="lightbox-close" id="lightboxClose">×</div>
+  <img id="lightboxImage" />
+</div>
+
+<script src="https://unpkg.com/maplibre-gl@4.7.1/dist/maplibre-gl.js"></script>
+
+<script>
+const CITIES = [
+  { name: "London", lat: 51.5072, lng: -0.1276 },
+  { name: "Paris", lat: 48.8566, lng: 2.3522 },
+  { name: "New York", lat: 40.7128, lng: -74.0060 },
+  { name: "Rome", lat: 41.9028, lng: 12.4964 },
+  { name: "Berlin", lat: 52.52, lng: 13.405 }
+];
+
+let map;
+let currentPhoto = null;
+let currentGuess = null;
+let guessMarker = null;
+let actualMarker = null;
+let totalScore = 0;
+let seenImages = [];
+    
+const lineId = "result-line";
+
+const submitBtn = document.getElementById("submitBtn");
+const nextBtn = document.getElementById("nextBtn");
+const photoEl = document.getElementById("photo");
+const resultsEl = document.getElementById("results");
+const statusEl = document.getElementById("status");
+const totalScoreEl = document.getElementById("totalScore");
+const lightbox = document.getElementById("lightbox");
+const lightboxImage = document.getElementById("lightboxImage");
+const lightboxClose = document.getElementById("lightboxClose");    
+
+init();
+
+async function init() {
+  photoEl.addEventListener("click", () => {
+    if (!currentPhoto) return;
+    lightboxImage.src = currentPhoto.imageUrl;
+    lightbox.classList.add("open");
+  });
+
+  lightboxClose.addEventListener("click", () => { lightbox.classList.remove("open"); });
+  lightbox.addEventListener("click", (e) => { if (e.target === lightbox) lightbox.classList.remove("open"); });  
+
+  map = new maplibregl.Map({
+    container: 'map',
+    style: 'https://tiles.openfreemap.org/styles/liberty',
+    center: [0, 20],
+    zoom: 2
+  });
+
+  map.addControl(new maplibregl.NavigationControl());
+  map.on("click", onMapClick);
+  map.on("load", async () => { await loadRound(); });
+}
+
+async function loadRound() {
+  resetRound();
+  statusEl.innerText = "Loading Wikimedia photograph...";
+
+  try {
+    const city = CITIES[Math.floor(Math.random() * CITIES.length)];
+    
+    // Changes made here:
+    // 1. Pointed API base to commons.wikimedia.org
+    // 2. Added &gsnamespace=6 to ensure the geosearch matches files/media only, not textual wiki entries
+    const url = `https://commons.wikimedia.org/w/api.php` +
+                `?origin=*` +
+                `&action=query` +
+                `&format=json` +
+                `&generator=geosearch` +
+                `&ggscoord=${city.lat}|${city.lng}` +
+                `&ggsradius=10000` +
+                `&ggslimit=100` +
+                `&ggsnamespace=6` + 
+                `&prop=coordinates|imageinfo` +
+                `&iiprop=url|extmetadata` +
+                `&iiurlwidth=800`;
+
+    const response = await fetch(url);
+    const data = await response.json();
+
+    if (!data.query || !data.query.pages) {
+      throw new Error("No results found in this region");
+    }
+
+    const pages = Object.values(data.query.pages);
+
+    // This filter rules out vectors, icons, flags, charts, maps, and specific extensions
+    const validPhotos = pages.filter(page => {
+      if (!page.coordinates || !page.imageinfo || !page.imageinfo[0]) return false;
+      
+      const info = page.imageinfo[0];
+      const titleLower = page.title.toLowerCase();
+      const urlLower = info.url.toLowerCase();
+
+      // Skip common non-photo file formats
+      if (urlLower.endsWith('.svg') || urlLower.endsWith('.gif') || urlLower.endsWith('.png')) return false;
+
+      // Filter out illustrations/graphics by keywords in filename or description
+      const dynamicBlacklist = ['flag', 'map', 'coat of arms', 'crest', 'logo', 'icon', 'diagram', 'chart', 'banner', 'seal', 'location'];
+      if (dynamicBlacklist.some(keyword => titleLower.includes(keyword))) return false;
+
+      // Check inner categories or descriptions if available via metadata
+      if (info.extmetadata && info.extmetadata.Categories) {
+        const categories = info.extmetadata.Categories.value.toLowerCase();
+        if (categories.includes('flags') || categories.includes('maps') || categories.includes('logos') || categories.includes('symbols')) return false;
+      }
+
+      if (seenImages.includes(page.pageid)) return false;  
+      return true;
+    });
+
+
+    if (!validPhotos.length) {
+      throw new Error("No usable photographs found in this segment. Retrying...");
+    }
+
+    const randomPhoto = validPhotos[Math.floor(Math.random() * validPhotos.length)];
+    seenImages.push(randomPhoto.pageid);  
+    if (seenImages.length > 500) {
+  seenImages.shift();
+}  
+    const imageMeta = randomPhoto.imageinfo[0];
+
+    // Clean up filename syntax ("File:Example Photo.jpg" -> "Example Photo")
+    const cleanTitle = randomPhoto.title.replace(/^File:/i, "").replace(/\.[^/.]+$/, "");
+
+    const originalDate =
+  imageMeta.extmetadata?.DateTimeOriginal?.value ||
+  imageMeta.extmetadata?.DateTime?.value ||
+  "";
+
+currentPhoto = {
+  title: cleanTitle,
+  imageUrl: imageMeta.thumburl || imageMeta.url,
+  lat: randomPhoto.coordinates[0].lat,
+  lng: randomPhoto.coordinates[0].lon,
+  year: extractYear(originalDate)
+};
+
+
+    photoEl.src = currentPhoto.imageUrl;
+    statusEl.innerText = "Click the map to place your guess.";
+
+  } catch (err) {
+    console.error(err);
+    // If a random radius fails or hits empty sets, automatically safe-retry a new layout load after 1.5 seconds
+    statusEl.innerText = "Filtering out illustrations... finding a real photo...";
+    setTimeout(loadRound, 1500);
+  }
+}
+
+function onMapClick(e) {
+  if (!currentPhoto) return;
+  currentGuess = { lat: e.lngLat.lat, lng: e.lngLat.lng };
+  submitBtn.disabled = false;
+
+  if (guessMarker) guessMarker.remove();
+
+  guessMarker = new maplibregl.Marker({ color: "#3b82f6" })
+    .setLngLat([currentGuess.lng, currentGuess.lat])
+    .addTo(map);
+
+  statusEl.innerText = "Press Submit Guess.";
+}
+
+submitBtn.addEventListener("click", submitGuess);
+
+function submitGuess() {
+  if (!currentGuess || !currentPhoto) return;
+
+  submitBtn.disabled = true;
+  nextBtn.disabled = false;
+
+  const distance = haversine(currentGuess.lat, currentGuess.lng, currentPhoto.lat, currentPhoto.lng);
+  const score = calculateScore(distance);
+  totalScore += score;
+  totalScoreEl.innerText = totalScore;
+
+  actualMarker = new maplibregl.Marker({ color: "#ef4444" })
+    .setLngLat([currentPhoto.lng, currentPhoto.lat])
+    .addTo(map);
+
+  drawLine([currentGuess.lng, currentGuess.lat], [currentPhoto.lng, currentPhoto.lat]);
+  fitMapToResults([currentGuess.lng, currentGuess.lat], [currentPhoto.lng, currentPhoto.lat]);
+
+  resultsEl.innerHTML = `
+    <div class="score">${score} points</div>
+    <div class="distance">Distance: ${distance.toFixed(1)} km</div>
+    <div class="meta">
+      <div>
+  <strong>${escapeHtml(currentPhoto.title)}</strong>
+</div>
+
+<div>
+  Year: ${currentPhoto.year}
+</div>
+      <div>Actual coordinates: ${currentPhoto.lat.toFixed(5)}, ${currentPhoto.lng.toFixed(5)}</div>
+    </div>
+  `;
+  statusEl.innerText = "Round complete.";
+}
+
+nextBtn.addEventListener("click", loadRound);
+
+function resetRound() {
+  currentGuess = null;
+  submitBtn.disabled = true;
+  nextBtn.disabled = true;
+  resultsEl.innerHTML = "";
+
+  if (guessMarker) { guessMarker.remove(); guessMarker = null; }
+  if (actualMarker) { actualMarker.remove(); actualMarker = null; }
+  if (map.getLayer(lineId)) map.removeLayer(lineId);
+  if (map.getSource(lineId)) map.removeSource(lineId);
+
+  map.flyTo({ center: [0, 20], zoom: 2 });
+}
+
+function drawLine(start, end) {
+  if (map.getLayer(lineId)) map.removeLayer(lineId);
+  if (map.getSource(lineId)) map.removeSource(lineId);
+
+  map.addSource(lineId, {
+    type: "geojson",
+    data: {
+      type: "Feature",
+      geometry: { type: "LineString", coordinates: [start, end] }
+    }
+  });
+
+  map.addLayer({
+    id: lineId,
+    type: "line",
+    source: lineId,
+    paint: { "line-color": "#ffffff", "line-width": 3 }
+  });
+}
+
+function fitMapToResults(a, b) {
+  const bounds = new maplibregl.LngLatBounds();
+  bounds.extend(a);
+  bounds.extend(b);
+  map.fitBounds(bounds, { padding: 80 });
+}
+
+function calculateScore(distanceKm) {
+  return Math.round(5000 * Math.exp(-distanceKm / 2000));
+}
+
+function haversine(lat1, lon1, lat2, lon2) {
+  const R = 6371;
+  const dLat = toRad(lat2 - lat1);
+  const dLon = toRad(lon2 - lon1);
+  const a = Math.sin(dLat / 2) * Math.sin(dLat / 2) +
+            Math.cos(toRad(lat1)) * Math.cos(toRad(lat2)) *
+            Math.sin(dLon / 2) * Math.sin(dLon / 2);
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a));
+}
+
+function toRad(v) { return v * Math.PI / 180; }
+function escapeHtml(str) {
+  return str.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;");
+}
+
+function extractYear(dateString) {
+
+  if (!dateString) return "Unknown";
+
+  const match = dateString.match(/\b(18|19|20)\d{2}\b/);
+
+  return match ? match[0] : "Unknown";
+}    
+</script>
+</body>
+</html>
